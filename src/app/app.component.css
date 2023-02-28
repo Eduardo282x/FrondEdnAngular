@@ -1,0 +1,57 @@
+.container{
+    width: 70%;
+    margin: 40px auto;
+}
+
+table {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #000;
+  }
+
+th{
+  border-bottom:  2px solid #000;
+}
+
+  .btn{
+    margin: 5px 10px 10px 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .ac{
+    padding-left: 50px;
+  }
+
+
+.container{
+    width: 70%;
+    margin: 80px auto;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  color: #fff;
+}
+
+.title{
+  text-align: center;
+  background: #0e027e;
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+
+.paginator{
+  margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #000;
+}

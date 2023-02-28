@@ -1,0 +1,52 @@
+<div class="msg">
+    <h1 mat-dialog-title>{{tituloAccion}} Estudiantes </h1>
+  <div mat-dialog-content>
+
+    <form [formGroup]="formEstudiantes">
+      <mat-grid-list cols="1" rowHeight="80px">
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width" class="mat-form-field">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Eduardo" maxlength="20" formControlName="Nombre" autocomplete="off">
+          </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <mat-form-field class="example-full-width" class="mat-form-field">
+          <mat-label>Apellido</mat-label>
+          <input matInput placeholder="Rojas" maxlength="20" formControlName="Apellido" autocomplete="off">
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-form-field class="example-full-width" class="mat-form-field">
+        <mat-label>Cedula</mat-label>
+        <input matInput placeholder="28391325" maxlength="10" formControlName="Cedula" autocomplete="off" type="number">
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Escuela</mat-label>
+        <mat-select formControlName="Escuela">
+          <mat-option value="Gryffindor">Gryffindor</mat-option>
+          <mat-option value="Slytherin">Slytherin</mat-option>
+          <mat-option value="Hafflepuff">Hafflepuff </mat-option>
+          <mat-option value="Ravenclaw">Ravenclaw </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-grid-tile>
+    </mat-grid-list>
+    </form>
+  </div>
+  <div mat-dialog-actions>
+    <button
+    mat-raised-button mat-dialog-close
+    color="primary"
+    (click)="addEditEstudiante()"
+    class="btn"
+    [disabled]="formEstudiantes.invalid"
+    >{{botonAccion}}</button>
+    <button mat-raised-button mat-dialog-close color="accent" class="btn">Volver</button>
+  </div>
+</div>

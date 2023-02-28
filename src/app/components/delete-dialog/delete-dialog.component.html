@@ -1,0 +1,17 @@
+<div class="msg">
+  <h1 mat-dialog-title>Eliminar Estudiantes </h1>
+<div mat-dialog-content>
+  ¿Desea Eliminar el Estudiante "{{dataEstudiantes.Nombre}} {{dataEstudiantes.Apellido}}"?
+</div>
+
+<div mat-dialog-actions>
+  <button
+  mat-raised-button mat-dialog-close
+  color="primary"
+  (click)="delete()"
+  class="btn"
+  cdkFocusInitial
+  >Si, Eliminar</button>
+  <button mat-raised-button mat-dialog-close color="accent" class="btn">No, Volver</button>
+</div>
+</div>
